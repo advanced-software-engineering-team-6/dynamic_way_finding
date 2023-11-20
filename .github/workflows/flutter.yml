@@ -17,7 +17,7 @@ jobs:
           distribution: 'adopt'
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'c7fb28034f' # 使用您的Flutter版本的提交哈希值
+          flutter-version: '3.14.0' # 使用您的Flutter版本的提交哈希值
       - run: flutter pub get
       - run: flutter test
       - run: flutter build apk
