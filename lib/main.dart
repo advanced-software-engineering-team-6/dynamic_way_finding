@@ -1,15 +1,15 @@
-import 'package:dynamic_way_finding/NetworkChecker.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import 'ErrorPage.dart';
+import 'RealNetworkChecker.dart';
 
 void main() => runApp(MyApp(
       networkChecker: RealNetworkChecker(),
     ));
 
 class MyApp extends StatefulWidget {
-  final NetworkChecker networkChecker;
+  final RealNetworkChecker networkChecker;
 
   const MyApp({super.key, required this.networkChecker});
 
@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
             )
-          : ErrorPage(),
+          : const ErrorPage(),
     );
   }
 }

@@ -1,7 +1,4 @@
-import 'package:dynamic_way_finding/NetworkChecker.dart';
+import 'package:dynamic_way_finding/RealNetworkChecker.dart';
 import 'package:mockito/mockito.dart';
 
-class MockNetworkChecker extends Mock implements NetworkChecker {
-  @override
-  bool hasNetworkConnection() => false;
-}
+class MockNetworkChecker extends Mock implements RealNetworkChecker {}
